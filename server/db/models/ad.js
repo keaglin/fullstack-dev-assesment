@@ -36,9 +36,6 @@ const SocialSchema = new mongoose.Schema({
   insights: InsightSchema
 })
 
-// const GoogleSchema = SocialSchema.extend({ KeyWords: Array })
-// if it doesn't work by just adding KeyWords but not using it, I'll use this
-
 const PlatformSchema = new mongoose.Schema({
   facebook: SocialSchema,
   instagram: SocialSchema,
