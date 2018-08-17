@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import axios from 'axios'
 import { CLIENT_URL } from '../../helpers/constants'
 
@@ -14,13 +14,21 @@ class App extends Component {
   }
   render() {
     let ads = this.state.ads
-    console.log(ads)
-    // ads.forEach(ad => console.log(ad))
     return (
       <div className="App">
-        
+        {
+          ads.map((ad, index) => {
+            return (
+              <li key={index}>
+                <div>
+                  <h2>{ad.name}</h2>
+                  <p>Goal: {ad.goal}</p>
+                </div>
+              </li>)
+          })
+        }
       </div>
-    );
+    )
   }
 }
 
