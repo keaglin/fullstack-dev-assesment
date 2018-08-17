@@ -46,6 +46,7 @@ const PlatformSchema = new mongoose.Schema({
 })
 
 const AdSchema = new mongoose.Schema({
+  id: Number,
   name: String,
   goal: String,
   total_budget: Number,
