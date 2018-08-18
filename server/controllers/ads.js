@@ -11,4 +11,11 @@ router.get('/', (req, res) => {
     .catch(err => console.log('Something went wrong', err))
 })
 
+router.get('/:name', (req, res) => {
+  let name = req.params.name
+  Ad.findOne({ name: name })
+    .then(ad => res.json({ ad: ad}))
+    .catch(err => console.log('Something went wrong', err))
+})
+
 module.exports = router

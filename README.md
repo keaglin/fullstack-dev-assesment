@@ -9,7 +9,10 @@
 - Node  
 - ExpressJS  
 
-#### Resources
+#### Resources 
+- Past work  
+- [Route Params](https://scotch.io/courses/using-react-router-4/route-params)  
+
 
 
 ## Project Screen Shots
