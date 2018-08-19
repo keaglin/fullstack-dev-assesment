@@ -18,13 +18,11 @@ class AdDetail extends Component {
     this.state.ad ? ad = this.state.ad : this.getAd()
     let adProps = []
     for (let prop in ad) {
-      console.log('prop from for loop', prop)
-      console.log('ad[prop] from for loop', ad[prop])
       if (prop !== 'platforms') {
         adProps.push([prop, ad[prop]])
       }
     }
-    console.log(adProps)
+    adProps.shift()
     return (
       <div>
         {
@@ -36,8 +34,6 @@ class AdDetail extends Component {
             )
           })
         }
-        {/* <div>{ad.name}</div>
-        <div>{ad.status}</div> */}
         <Platform platforms={ad.platforms} />
       </div>
     )
