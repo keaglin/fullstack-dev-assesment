@@ -7,7 +7,7 @@ const AdList = (props) => {
   return (
     <div>
       {
-        ads.map((ad, index) => {
+        ads.map((ad) => {
           return (
             <Link to={{
               pathname: `/${ad.name}`,
@@ -16,7 +16,6 @@ const AdList = (props) => {
               <li key={ad.id.toString()}>
                 <div>
                   <h2>{ad.name}</h2>
-                  <p>Goal: {ad.goal}</p>
                 </div>
               </li>
             </Link>)
