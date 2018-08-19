@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { CLIENT_URL } from '../../helpers/constants'
-import Platform from '../Platform/Platform'
+import PlatformContainer from '../PlatformContainer/PlatformContainer'
 
 class AdDetail extends Component {
   state = {
@@ -23,6 +23,7 @@ class AdDetail extends Component {
       }
     }
     adProps.shift()
+
     return (
       <div>
         {
@@ -34,7 +35,7 @@ class AdDetail extends Component {
             )
           })
         }
-        <Platform platforms={ad.platforms} />
+        <PlatformContainer platforms={ad.platforms} />
       </div>
     )
   }
