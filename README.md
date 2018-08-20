@@ -57,3 +57,5 @@ You will need `node` and `npm` installed globally on your machine.
 - [Route Params](https://scotch.io/courses/using-react-router-4/route-params) - using match to retrieve route params in order to display the detail page of an item even when refreshing and/or (re)visiting that item's detail page
 - Mongoose - data modeling for MongoDB
 - Express - make it easy to create a Node API
+- [Object.entries()](https://stackoverflow.com/questions/39336556/how-can-i-slice-an-object-in-javascript)  
+- [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)  

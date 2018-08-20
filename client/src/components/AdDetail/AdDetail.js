@@ -18,7 +18,8 @@ class AdDetail extends Component {
     this.state.ad ? ad = this.state.ad : this.getAd()
     let adProps = []
     for (let prop in ad) {
-      if (prop !== 'platforms') {
+      console.log('typeof ad[prop] is', typeof(ad[prop]))
+      if (typeof(ad[prop]) !== 'object') {
         adProps.push([prop, ad[prop]])
       }
     }
@@ -26,16 +27,21 @@ class AdDetail extends Component {
 
     return (
       <div>
-        {
-          adProps.map(prop => {
-            return (
-              <li key={prop[0]}>
-                {prop[0]}: {prop[1]}
-              </li>
-            )
-          })
-        }
-        <PlatformContainer platforms={ad.platforms} />
+        <ul>
+          {
+            adProps.map(prop => {
+              // wanna capitalize the first letters in prop[0] 
+              // need to get all data displaying before 
+              // worrying about formatting
+              return (
+                <li key={prop[0]}>
+                  {prop[0]}: {prop[1]}
+                </li>
+              )
+            })
+          }
+          <PlatformContainer platforms={ad.platforms} />
+        </ul>
       </div>
     )
   }
