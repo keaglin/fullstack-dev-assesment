@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios                from 'axios'
 import { CLIENT_URL }       from '../../helpers/constants'
+import { Link }             from 'react-router-dom'
 import PlatformContainer    from '../PlatformContainer/PlatformContainer'
 
 class AdDetail extends Component {
@@ -26,12 +27,12 @@ class AdDetail extends Component {
 
     return (
       <div>
+        <Link to='/'>
+          <button>BACK</button>
+        </Link>
         <ul>
           {
             adProps.map(prop => {
-              // wanna capitalize the first letters in prop[0] 
-              // need to get all data displaying before 
-              // worrying about formatting
               return (
                 <li key={prop[0]}>
                   {prop[0]}: {prop[1]}
