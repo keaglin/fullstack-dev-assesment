@@ -8,8 +8,6 @@ const PlatformList = (props) => {
   const displayCollection = (el) => {
     let propString = ''
     return Object.entries(el).map(prop => {
-      console.log('prop[0] is', prop[0])
-      console.log(`prop[0] === 'image' is`, prop[0] === 'image')
       if (prop[0] === 'image') {
         return (
           <div>
