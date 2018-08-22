@@ -59,3 +59,4 @@ You will need `node` and `npm` installed globally on your machine.
 - Express - make it easy to create a Node API
 - [Object.entries()](https://stackoverflow.com/questions/39336556/how-can-i-slice-an-object-in-javascript)  
 - [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)  
+- [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) - initially wanted to use `JSON.Stringify` or `.toString()` but after more looking, I thought this was better for my use case because instead of being separated by a comma (default), I could choose a character to separate the values.  
