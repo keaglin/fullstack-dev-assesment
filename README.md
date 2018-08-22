@@ -1,6 +1,6 @@
 # Nanos Dashboard
 
-[React App](https://build-kozxwcfoga.now.sh/)  
+[React App](https://build-olmuyflgrl.now.sh)  
 [Node API](https://guarded-headland-44129.herokuapp.com/)
 
 ## Project Status  
@@ -66,3 +66,4 @@ You will need `node` and `npm` installed globally on your machine.
 - [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) - iterate over an object  
 - [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) - initially wanted to use `JSON.Stringify` or `.toString()` but after more looking, I thought this was better for my use case because instead of being separated by a comma (default), I could choose a character to separate the values.  
 - [Deploying Node/Mongo app on Heroku and mLab, courtesy of General Assembly](https://git.generalassemb.ly/ga-wdi-lessons/express-mongoose-mlab-deploy)  
+- [On using `require` to load images when building with Webpack](https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react/39999421)  
