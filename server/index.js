@@ -1,8 +1,7 @@
-const express = require('express')
-const parser = require('body-parser')
-const app = express()
-const cors = require('cors')
-const data = require('../data/data')
+const express       = require('express')
+const parser        = require('body-parser')
+const app           = express()
+const cors          = require('cors')
 const AdsController = require('./controllers/ads')
 
 app.set('port', process.env.PORT || 3001)

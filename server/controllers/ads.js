@@ -1,7 +1,7 @@
-const express = require('express')
-const router = express.Router()
+const express  = require('express')
+const router   = express.Router()
 const mongoose = require('../db/connection')
-const Ad = mongoose.model('Ad')
+const Ad       = mongoose.model('Ad')
 
 router.get('/', (req, res) => {
   Ad.find({})

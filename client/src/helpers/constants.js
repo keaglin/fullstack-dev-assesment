@@ -1,1 +1,1 @@
-export const CLIENT_URL = 'http://localhost:3001'
+export const CLIENT_URL = 'https://guarded-headland-44129.herokuapp.com/'

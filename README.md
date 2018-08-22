@@ -1,7 +1,7 @@
 # Nanos Dashboard
 
-[React App](#)  
-[Node API](#)
+[React App](https://build-kozxwcfoga.now.sh/)  
+[Node API](https://guarded-headland-44129.herokuapp.com/)
 
 ## Project Status  
 Actively being developed
@@ -11,6 +11,11 @@ Actively being developed
 - Node  
 - ExpressJS  
 - MongoDB
+
+#### Deployment Tools  
+- React app deployed to [ZEIT's Now](https://now.sh)
+- Node API deployed to [Heroku](https://heroku.com)
+- MongoDB database deployed to [mLab Cloud DB](https://mlab.com)
 
 
 ## Project Screen Shots
@@ -51,12 +56,13 @@ You will need `node` and `npm` installed globally on your machine.
 <!-- deployment instructions? -->
 
 #### Resources 
-- create-react-app - quick start, used to achieve consistent experience between apps
-- React Router - front end routing
-- Axios - HTTP requests
+- [create-react-app](https://github.com/facebook/create-react-app) - quick start, used to achieve consistent experience between apps
+- [React Router](https://reacttraining.com/react-router/core/guides/philosophy) - front end routing
+- [Axios](https://github.com/axios/axios) - HTTP requests
 - [Route Params](https://scotch.io/courses/using-react-router-4/route-params) - using match to retrieve route params in order to display the detail page of an item even when refreshing and/or (re)visiting that item's detail page
-- Mongoose - data modeling for MongoDB
-- Express - make it easy to create a Node API
-- [Object.entries()](https://stackoverflow.com/questions/39336556/how-can-i-slice-an-object-in-javascript)  
-- [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)  
+- [Mongoose](https://mongoosejs.com) - data modeling for MongoDB
+- [Express](https://expressjs.com) - make it easy to create a Node API
+- [Object.entries()](https://stackoverflow.com/questions/39336556/how-can-i-slice-an-object-in-javascript) - turning objects into arrays automatically (I implemented something similar in AdDetail)  
+- [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) - iterate over an object  
 - [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) - initially wanted to use `JSON.Stringify` or `.toString()` but after more looking, I thought this was better for my use case because instead of being separated by a comma (default), I could choose a character to separate the values.  
+- [Deploying Node/Mongo app on Heroku and mLab, courtesy of General Assembly](https://git.generalassemb.ly/ga-wdi-lessons/express-mongoose-mlab-deploy)  

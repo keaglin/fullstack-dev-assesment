@@ -1,5 +1,5 @@
 const mongoose = require('./connection')
-const seeds   = require('../../data/data')
+const seeds    = require('../data/data')
 
 const Ad = mongoose.model('Ad')
 
