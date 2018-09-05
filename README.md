@@ -1,6 +1,6 @@
 # Nanos Dashboard
 ## Demo
-[React App](https://build-vlbwvfwqug.now.sh)  
+[React App](https://build-tjabkqwbqm.now.sh)  
 [Node API](https://guarded-headland-44129.herokuapp.com/)
 
 ## Project Status  
