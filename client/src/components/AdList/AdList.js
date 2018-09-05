@@ -15,7 +15,7 @@ const AdList = (props) => {
             }}>
               <li key={ad.id.toString()}>
                 <div>
-                  <h2>{ad.name}</h2>
+                  <h3>{ad.name}</h3>
                 </div>
               </li>
             </Link>)
