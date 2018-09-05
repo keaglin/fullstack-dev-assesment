@@ -30,6 +30,8 @@ class AdDetail extends Component {
         <Link to='/'>
           <button>BACK</button>
         </Link>
+        <h3 style={{textAlign: 'center'}}>Campaign: {ad.name}</h3>
+        <h4>Campaign Metrics:</h4>
         <ul>
           {
             adProps.map(prop => {

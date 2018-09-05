@@ -17,6 +17,7 @@ class AdContainer extends Component {
     let ads = this.state.ads
     return (
       <div className="AdContainer">
+      <h2>Active Campaigns</h2>
         <AdList ads={ads} />
       </div>
     )
